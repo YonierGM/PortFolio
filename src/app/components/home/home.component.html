@@ -1,0 +1,277 @@
+<div class="navbar">
+    <app-navbar/>
+</div>
+<section class="home">
+    <div class="main">
+        <div class="presentacion">
+            <div class="foto">
+                <div class="contenido">
+                    <img src="./../../../assets/images/foto.jpg" alt="Foto Perfil" title="YonierGM">
+                </div>
+            </div>
+            <div class="info">
+                <h1>Skilled Web Developer</h1>
+                <p>
+                    Hola, soy Yonier, <strong>ingeniero de sistemas</strong> y <strong>desarrollador web</strong> con habilidades para integrar funcionalidades y brindar soluciones desde el lado del cliente y del servidor <strong>(frontend - backend)</strong>. Para la creación y gestión de <strong>aplicaciones y servicios web</strong>.
+                </p>
+    
+                <div class="acciones">
+                    <a href="https://github.com/ELanza-48" target="_blank">
+                        <img src="https://img.shields.io/badge/github-181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="github" />
+                    </a>
+    
+                    <a  href="https://www.linkedin.com/in/yonier-garcia-mosquera-8a4a20167/" target="_blank">
+                        <img src="https://img.shields.io/badge/Linked%20In-0A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="example"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="scroll">
+            <img src="./../../../assets/images/scroll-1.png" alt="icon-scroll" title="icon-scroll">
+        </div>
+    
+        <section class="proyectos">
+            <div class="header">
+                <h1>Proyectos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores</p>
+            </div>
+        
+            <div class="cards">
+                <div class="card" (mouseleave)="quitarInfo1()" (mouseover)="mostrarInfo1()">
+                    <img src="./../../../assets/images/proyectos/Login-Desktop-2.png" alt="" >
+                    <button class="ver" [ngClass]="{'Btnver': ver1}"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="card" (mouseleave)="quitarInfo2()" (mouseover)="mostrarInfo2()">
+                    <img src="./../../../assets/images/proyectos/Rick.png" alt="">
+                    <button class="ver" [ngClass]="{'Btnver': ver2}"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="card" (mouseleave)="quitarInfo3()" (mouseover)="mostrarInfo3()">
+                    <img src="./../../../assets/images/proyectos/Login-Desktop.png" alt="">
+                    <button class="ver" [ngClass]="{'Btnver': ver3}"><i class="fa-solid fa-eye"></i></button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="estudios">
+            <div class="header">
+                <h1>Estudios</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores</p>
+            </div>
+                <div class="toggle" [ngClass]="{'alto': altura1}" (click)="cambiarAltura1()">
+                    <div class="mostrar">
+                        <div class="nombre">
+                            <div class="carrera">
+                                <h1>Ingenier&iacute;a de sistemas</h1>
+                                <div class="fecha">
+                                    <p>Universidad del Pac&iacute;fico</p>
+                                    <p>(2016 - 2021)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-angle-up" [ngClass]="{'fa-angle-down': !altura1, 'fa-angle-up': altura1}"></i>
+                    </div>
+                    
+                    @if (altura1) {
+                        <div class="detalle">
+                            <div class="contenido-detalle">
+                                <div class="titulo">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, non ducimus. Unde quidem velit consequatur nesciunt, delectus, ratione eum explicabo at placeat tempora ea minima veritatis dolore commodi similique dolores.</p>
+                                </div>
+                                <div class="tecnologias">
+                            
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                                            alt="HTML"/> 
+                                    </a>
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                                            alt="CSS"/> 
+                                    </a>
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                                            alt="JavaScript"/> 
+                                    </a>
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+                                            alt="Angular"/> 
+                                    </a>
+                    
+                                    
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"
+                                            alt="MySQL"/> 
+                                    </a>
+                                    <a href="https://github.com/YonierGM" target="_blank">
+                                        <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="php" />
+                                    </a>
+                                    <a href="https://github.com/YonierGM" target="_blank">
+                                        <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+    
+                <div class="toggle" [ngClass]="{'alto': altura2}" (click)="cambiarAltura2()">
+                    <div class="mostrar">
+                        <div class="nombre">
+                            <div class="carrera">
+                                <h1>Spring Framework & Spring Boot</h1>
+                                <div class="fecha">
+                                    <p>IBM SkillsBuild</p>
+                                    <p>(2022)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-angle-up" [ngClass]="{'fa-angle-down': !altura2, 'fa-angle-up': altura2}"></i>
+                    </div>
+                    
+                    @if (altura2) {
+                        <div class="detalle">
+                            <div class="contenido-detalle">
+                                <div class="titulo">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, non ducimus. Unde quidem velit consequatur nesciunt, delectus, ratione eum explicabo at placeat tempora ea minima veritatis dolore commodi similique dolores.</p>
+                                </div>
+                                <div class="tecnologias">
+                            
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"
+                                          alt="Spring"/> 
+                                    </a>
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/spring%20boot-6DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white" alt="spring Boot" /> 
+                                    </a>
+        
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+    
+                <div class="toggle" [ngClass]="{'alto': altura3}" (click)="cambiarAltura3()">
+                    <div class="mostrar">
+                        <div class="nombre">
+                            <div class="carrera">
+                                <h1>Diseño web Profesional</h1>
+                                <div class="fecha">
+                                    <p>IBM SkillsBuild</p>
+                                    <p>(2022)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-angle-up" [ngClass]="{'fa-angle-down': !altura3, 'fa-angle-up': altura3}"></i>
+                    </div>
+                    
+                    @if (altura3) {
+                        <div class="detalle">
+                            <div class="contenido-detalle">
+                                <div class="titulo">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, non ducimus. Unde quidem velit consequatur nesciunt, delectus, ratione eum explicabo at placeat tempora ea minima veritatis dolore commodi similique dolores.</p>
+                                </div>
+                                <div class="tecnologias">
+                            
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                                          alt="HTML"/> 
+                                    </a>
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/> 
+                                    </a>
+                    
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="Sass"/> 
+                                    </a>
+                    
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"/> 
+                                    </a>
+                    
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Figma"/> 
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+    
+                <div class="toggle" [ngClass]="{'alto': altura4}" (click)="cambiarAltura4()">
+                    <div class="mostrar">
+                        <div class="nombre">
+                            <div class="carrera">
+                                <h1>Fundamentos profesionales del desarrollo</h1>
+                                <div class="fecha">
+                                    <p>Microsoft & LinkedIn</p>
+                                    <p>(2022)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-angle-up" [ngClass]="{'fa-angle-down': !altura4, 'fa-angle-up': altura4}"></i>
+                    </div>
+                    
+                    @if (altura4) {
+                        <div class="detalle">
+                            <div class="contenido-detalle">
+                                <div class="titulo">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, non ducimus. Unde quidem velit consequatur nesciunt, delectus, ratione eum explicabo at placeat tempora ea minima veritatis dolore commodi similique dolores.</p>
+                                </div>
+                                <div class="tecnologias">
+                    
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript"/> 
+                                    </a>
+        
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git"/> 
+                                    </a>
+        
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/> 
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+    
+                <div class="toggle" [ngClass]="{'alto': altura5}" (click)="cambiarAltura5()">
+                    <div class="mostrar">
+                        <div class="nombre">
+                            <div class="carrera">
+                                <h1>Lenguaje de programaci&oacute;n JavaScript</h1>
+                                <div class="fecha">
+                                    <p>SENA</p>
+                                    <p>(2023)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-angle-up" [ngClass]="{'fa-angle-down': !altura5, 'fa-angle-up': altura5}"></i>
+                    </div>
+                    
+                    @if (altura5) {
+                        <div class="detalle">
+                            <div class="contenido-detalle">
+                                <div class="titulo">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, non ducimus. Unde quidem velit consequatur nesciunt, delectus, ratione eum explicabo at placeat tempora ea minima veritatis dolore commodi similique dolores.</p>
+                                </div>
+                                <div class="tecnologias">
+                                    <a href="https://github.com/YonierGM" target="_blank"> 
+                                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript"/> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+        </section>
+
+        <div class="contact">
+            <app-contact/>
+        </div>
+    </div>
+</section>
+

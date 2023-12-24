@@ -1,0 +1,314 @@
+@font-face {
+    font-family: mont-bold;
+    src: url('./../../../assets/Fonts/Mont-Bold.ttf');
+}
+
+@font-face {
+    font-family: mont-regular;
+    src: url('./../../../assets/Fonts/Mont-Regular.ttf');
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    background: #F0F2F5;
+}
+
+.main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.presentacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.foto{
+    max-width: 100%;
+}
+
+.foto .contenido{
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    border-radius: 30% 70% 70% 30% / 30% 32% 68% 70%;
+    overflow: hidden;
+    transition: .4s all;
+}
+
+.contenido:hover{
+    -webkit-box-shadow: -1px 17px 40px -15px rgba(0,0,0,0.45);
+    -moz-box-shadow: -1px 17px 40px -15px rgba(0,0,0,0.45);
+    box-shadow: -1px 17px 40px -15px rgba(0,0,0,0.45);
+}
+
+.contenido img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: .3s all;
+}
+
+img:hover{
+    filter: saturate(110%);
+}
+
+.info{
+    display: grid;
+    place-content: center;
+    width: 400px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.info h1{
+    font-family: mont-bold;
+    font-size: 4rem
+}
+
+.info p{
+    text-align: justify;
+    font-family: mont-regular;
+}
+
+.acciones{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.acciones a:hover{
+    opacity: .8;
+}
+
+.scroll{
+    width: 100%;
+    height: 40px;
+
+    display: grid;
+    place-content: center;
+}
+
+.scroll img{
+    width: 20px;
+
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes scroll {
+
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.estudios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+    margin: auto;
+    background: #F0F2F5;
+}
+
+h1{
+    font-family: mont-bold;
+    font-size: 1.5rem;
+    line-height: 60px;
+}
+
+p{
+    text-align: justify;
+    font-family: mont-regular;
+}
+
+.alto{
+    height: 200px !important;
+}
+
+.toggle{
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    color: #000000;
+    overflow: hidden;
+    transition: .4s all;
+    cursor: pointer;
+
+    transition: .3s all;
+    border-radius: 4px;
+}
+
+.fa-solid{
+    font-size: 25px;
+}
+
+.toggle:hover{
+    -webkit-box-shadow: -1px 17px 40px -15px rgba(0,0,0,0.10);
+    -moz-box-shadow: -1px 17px 40px -15px rgba(0,0,0,0.10);
+    box-shadow: -1px 17px 40px -15px rgba(0,0,0,0.10);
+
+}
+.toggle .mostrar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: 0 8px 0 8px;
+}
+
+.carrera .fecha{
+    display: flex;
+    gap: 8px;
+}
+
+.detalle{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    padding: 8px 0px 8px;
+}
+
+.detalle .contenido-detalle{
+    width: 98%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+
+    margin: auto;
+    gap: 10px;
+    color: black;
+}
+
+.contenido-detalle .titulo{
+    height: 200px;
+}
+
+.tecnologias{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.tecnologias a{
+    height: 30px;
+}
+
+.tecnologias a img{
+    height: 100%;
+}
+
+.tecnologias a:hover{
+    opacity: .8;
+}
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.proyectos .cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ver{
+    display: none;
+    transition: .5s all;
+    font-size: 1rem;
+
+}
+
+.Btnver{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    border: none;
+    opacity: .9;
+
+    
+    display: block;
+    cursor: pointer
+}
+
+.ver i{
+    font-size: 1.5rem;
+    transition: .3s all;
+}
+
+.ver:hover i{
+    color: #0266E9;
+    font-size: 2rem;
+}
+
+.cards .card{
+    position: relative;
+    width: 700px;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s all;
+}
+
+.card:hover img{
+    scale: 1.05;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 8px;
+}

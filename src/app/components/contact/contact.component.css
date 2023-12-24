@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;700&display=swap');
+
+.login{
+    display: grid;
+    grid-template-areas: "formulario aside";
+    grid-template-columns: .8fr 1.2fr;
+
+    background: #F5F5F5;
+}
+
+.formulario{
+    grid-area: formulario;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formulario .logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+}
+
+.formulario .logo img{
+    object-fit: contain;
+}
+
+.formulario button{
+    width: 90%;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #C7C8D0;
+    color: #ffffff;
+    
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.formulario button:hover{
+    background-color: #939397;
+    opacity: .8;
+}
+
+.login form .inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 90%;
+}
+
+.inputs .input{
+    width: 100%;
+    display: flex;
+}
+.inputs .input .color{
+    width: 5px;
+    background: #0066E7;
+}
+
+.login .formulario .inputs input{
+    width: 100%;
+    height: 40px;
+
+    background: #ffffff;
+    outline: none;
+    border:  none;
+    color: #2c2b2b;
+
+    font-size: 18px;
+
+    transition: all 2s;
+    padding-left: 20px;
+}
+
+.login .formulario .inputs textarea{
+    width: 100%;
+
+    background: #ffffff;
+    outline: none;
+    border:  none;
+    color: #2c2b2b;
+
+    font-size: 18px;
+
+    transition: all 2s;
+    padding-left: 20px;
+}
+
+.login .formulario .inputs input:focus{
+    border-bottom: 1px solid #0066E7;
+}
+
+.login .formulario .inputs textarea:focus{
+    border-bottom: 1px solid #0066E7;
+}
+
+.login .formulario .inputs .input textarea::placeholder{
+    opacity: .4;
+    font-size: 15px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+}
+
+.login .formulario .inputs .input input::placeholder{
+    opacity: .4;
+    font-size: 15px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+}
+
+.password{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.eyeicon{
+    position: absolute;
+    padding-right: 10px;
+}
+
+.aside{
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.info{
+    
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    padding: 10px;
+
+    position: absolute;
+    z-index: 10000;
+
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info hr{
+    width: 30%;
+    height: 8px;
+
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+}
+
+.info h1{
+    font-size:3rem;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.info p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.aside img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    filter: blur(2px);
+    opacity: .9;
+
+    transition: all 2s;
+}
+
+.aside:hover img{
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .login{
+        display: grid;
+        gap: 50px;
+        grid-template-areas: "formulario formulario"
+                            "aside aside";                  
+    }
+
+    .formulario{
+        grid-area: formulario;
+        
+    }
+
+    .aside{
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 0px;
+
+        overflow: hidden;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .login{
+        gap: 4px;                    
+    }
+}
