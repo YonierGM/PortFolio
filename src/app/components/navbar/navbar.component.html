@@ -1,15 +1,34 @@
-<section>
-    <nav>
-        <div class="logo">
-            <h3>YonierGM</h3>
-        </div>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">PortFolio</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+  <div class="logo">
+    <div class="img-logo">
+      <h1>Yonier GM</h1>
+    </div>
+    <i class="fa-solid fa-bars abrir-menu" [ngClass]="{ 'ocultar': visible}" (click)="menu()"></i>
+  </div>
 
-</section>
+  <nav class="nav" [ngClass]="{ 'visible': visible}">
+    <div class="header-menu">
+      <P><strong>¡Hola!</strong></P>
+      <i class="fa-solid fa-xmark" (click)="menu()"></i>
+    </div>
+    
+    <ul class="nav-list">
+      <li>
+        <i class="fa-solid fa-house logo-li"></i>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-circle-user logo-li"></i>
+        <a href="#">Sobre Mi</a>
+      </li>
+      <li>
+        <i class="fa-brands fa-dev logo-li"></i>
+        <a href="#">PortFolio</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-envelope logo-li"></i>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
