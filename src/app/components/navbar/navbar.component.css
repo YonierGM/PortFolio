@@ -13,6 +13,8 @@
 
     .abrir-menu{
         visibility: visible;
+
+        font-size: 1.6rem;
     }
 
     .logo-li{
@@ -34,6 +36,8 @@
         "nav";
 
         grid-template-rows: 70px 1fr;
+
+        position: fixed;
     }
 
     .logo{
@@ -124,10 +128,6 @@
         display: flex;
         align-items: center;
     }
-
-    li a:hover{
-        background: rgb(255, 255, 255);
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -159,7 +159,6 @@
         justify-content: space-around;
         align-items: center;
 
-        padding: 10px;
         background: #ffffff;
     }
 
@@ -192,6 +191,12 @@
         padding: 8px;
 
         list-style: none;
+        transition: .2s all ease;
+    }
+
+    li:hover{
+        background: #F0F2F5;
+        
     }
 
     li a{

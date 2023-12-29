@@ -20,6 +20,11 @@
     gap: 70px;
 }
 
+.tittle-seccion{
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
 .navbar{
     grid-area: navbar;
     width: 100%;
@@ -116,7 +121,7 @@ img:hover{
     text-align: justify;
     font-family: mont-regular;
     text-wrap: wrap;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .acciones{
@@ -219,6 +224,7 @@ p{
     align-items: center;
     height: 100px;
     margin: 0 8px 0 8px;
+    padding: 20px;
 }
 
 .carrera .fecha{
@@ -229,18 +235,16 @@ p{
 
 .detalle{
     width: 100%;
+    height: auto;
     display: grid;
     place-content: center;
-    padding: 8px 0px 8px;
+    padding: 0px 0px 20px;
 }
 
 .detalle .contenido-detalle{
     width: 98%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-content: center;
-
-    margin: auto;
+    display: flex;
+    justify-content: center;
     gap: 10px;
     color: black;
 }
@@ -250,7 +254,7 @@ p{
 }
 
 .tecnologias{
-    height: 30px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,14 +332,10 @@ p{
 }
 
 .alto{
-    height: 400px !important;
+    height: auto !important;
 }
 
 @media screen and (max-width: 768px) {
-    .alto{
-        height: 400px !important;
-        min-height: auto;
-    }
 
     .info h1{
         text-align: center;
@@ -390,5 +390,10 @@ p{
         border-radius: 50%;
         overflow: hidden;
         transition: .4s all;
+    }
+
+    .carrera h1{
+        font-family: mont-bold;
+        font-size: 1.1rem;
     }
 }
