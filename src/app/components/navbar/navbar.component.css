@@ -1,4 +1,6 @@
-
+.logo{
+    background: #ffffff;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -7,6 +9,10 @@
         color: #596D7D;
 
         font-size: 1rem;
+    }
+
+    .abrir-menu{
+        visibility: visible;
     }
 
     .logo-li{
@@ -20,8 +26,7 @@
 
 
     header{
-        min-width: 100%;
-        height: 100vh;
+        width: 100%;
 
         display: grid;
         grid-template-areas: 
@@ -29,8 +34,6 @@
         "nav";
 
         grid-template-rows: 70px 1fr;
-
-        position: fixed;
     }
 
     .logo{
@@ -49,7 +52,7 @@
 
     .nav{
         width: 70%;
-        height: 100%;
+        height: 100vh;
 
         display: grid;
         grid-template-areas: 
@@ -124,5 +127,76 @@
 
     li a:hover{
         background: rgb(255, 255, 255);
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    i,p,a{
+        text-decoration: none;
+        color: #596D7D;
+
+        font-size: 1rem;
+    }
+
+    .abrir-menu{
+        visibility: hidden;
+    }
+
+    .logo-li{
+        display: none;
+    }
+
+    .ocultar{
+        display: none;
+    }
+
+
+    header{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 10px;
+        background: #ffffff;
+    }
+
+    .logo{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav{
+        height: 100%;
+
+    }
+    
+    .header-menu{
+        display: none;
+    }
+
+    .nav-list{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    li{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+
+        list-style: none;
+    }
+
+    li a{
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 }

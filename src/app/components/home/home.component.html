@@ -1,64 +1,62 @@
 
-<div class="navbar">
-    <app-navbar/>
-</div>
-<!-- <section class="home">
-    <div class="main">
-        <div class="presentacion">
-            <div class="foto">
-                <div class="contenido">
-                    <img src="./../../../assets/images/foto.jpg" alt="Foto Perfil" title="YonierGM">
+<section class="main-content">
+    <div class="navbar">
+        <app-navbar/>
+    </div>
+    <section class="home">
+        <div class="main">
+            <div class="presentacion">
+                <div class="foto">
+                    <div class="contenido">
+                        <img src="./../../../assets/images/foto.jpg" alt="Foto Perfil" title="YonierGM">
+                    </div>
                 </div>
-            </div>
-            <div class="info">
-                <h1>Skilled Web Developer</h1>
-                <p>
-                    Hola, soy Yonier, <strong>ingeniero de sistemas</strong> y <strong>desarrollador web</strong> con habilidades para integrar funcionalidades y brindar soluciones desde el lado del cliente y del servidor <strong>(frontend - backend)</strong>. Para la creación y gestión de <strong>aplicaciones y servicios web</strong>.
-                </p>
-    
-                <div class="acciones">
-                    <a href="https://github.com/ELanza-48" target="_blank">
-                        <img src="https://img.shields.io/badge/github-181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="github" />
-                    </a>
-    
-                    <a  href="https://www.linkedin.com/in/yonier-garcia-mosquera-8a4a20167/" target="_blank">
-                        <img src="https://img.shields.io/badge/Linked%20In-0A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="example"/>
-                    </a>
+                <div class="info">
+                    <h1>Web Developer</h1>
+                    <p>
+                        Hola, soy Yonier, <strong>ingeniero de sistemas</strong> y <strong>desarrollador web</strong> con habilidades para integrar funcionalidades y brindar soluciones desde el lado del cliente y del servidor <strong>(frontend - backend)</strong>. Para la creación y gestión de <strong>aplicaciones y servicios web</strong>.
+                    </p>
+        
+                    <div class="acciones">
+                        <a href="https://github.com/ELanza-48" target="_blank">
+                            <img src="https://img.shields.io/badge/github-181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="github" />
+                        </a>
+        
+                        <a  href="https://www.linkedin.com/in/yonier-garcia-mosquera-8a4a20167/" target="_blank">
+                            <img src="https://img.shields.io/badge/Linked%20In-0A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="example"/>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    
-        <div class="scroll">
-            <img src="./../../../assets/images/scroll-1.png" alt="icon-scroll" title="icon-scroll">
-        </div>
-    
-        <section class="proyectos">
-            <div class="header">
-                <h1>Proyectos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores</p>
             </div>
         
-            <div class="cards">
-                <div class="card" (mouseleave)="quitarInfo1()" (mouseover)="mostrarInfo1()">
-                    <img src="./../../../assets/images/proyectos/Login-Desktop-2.png" alt="" >
-                    <button class="ver" [ngClass]="{'Btnver': ver1}"><i class="fa-solid fa-eye"></i></button>
-                </div>
-                <div class="card" (mouseleave)="quitarInfo2()" (mouseover)="mostrarInfo2()">
-                    <img src="./../../../assets/images/proyectos/Rick.png" alt="">
-                    <button class="ver" [ngClass]="{'Btnver': ver2}"><i class="fa-solid fa-eye"></i></button>
-                </div>
-                <div class="card" (mouseleave)="quitarInfo3()" (mouseover)="mostrarInfo3()">
-                    <img src="./../../../assets/images/proyectos/Login-Desktop.png" alt="">
-                    <button class="ver" [ngClass]="{'Btnver': ver3}"><i class="fa-solid fa-eye"></i></button>
-                </div>
+            <div class="scroll">
+                <img src="./../../../assets/images/scroll-1.png" alt="icon-scroll" title="icon-scroll">
             </div>
-        </section>
-    
-        <section class="estudios">
-            <div class="header">
-                <h1>Estudios</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores</p>
-            </div>
+        
+            <section class="proyectos">
+                <div class="header">
+                    <h1>Proyectos</h1>
+                    <!-- <p>Una muestra de los proyectos en los que he podido desarrollar mis habilidades</p> -->
+                </div>
+            
+                <div class="cards">
+                    <div class="card" (mouseleave)="quitarInfo1()" (mouseover)="mostrarInfo1()">
+                        <img src="./../../../assets/images/proyectos/Login-Desktop-2.png" alt="" >
+                    </div>
+                    <div class="card" (mouseleave)="quitarInfo2()" (mouseover)="mostrarInfo2()">
+                        <img src="./../../../assets/images/proyectos/Rick.png" alt="">
+                    </div>
+                    <div class="card" (mouseleave)="quitarInfo3()" (mouseover)="mostrarInfo3()">
+                        <img src="./../../../assets/images/proyectos/Login-Desktop.png" alt="">
+                    </div>
+                </div>
+            </section>
+        
+            <section class="estudios">
+                <div class="header">
+                    <h1>Estudios</h1>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores</p> -->
+                </div>
                 <div class="toggle" [ngClass]="{'alto': altura1}" (click)="cambiarAltura1()">
                     <div class="mostrar">
                         <div class="nombre">
@@ -77,7 +75,7 @@
                         <div class="detalle">
                             <div class="contenido-detalle">
                                 <div class="titulo">
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, non ducimus. Unde quidem velit consequatur nesciunt, delectus, ratione eum explicabo at placeat tempora ea minima veritatis dolore commodi similique dolores.</p>
+                                    <p>Implementando las siguientes tecnologias:</p>
                                 </div>
                                 <div class="tecnologias">
                             
@@ -139,7 +137,7 @@
                             
                                     <a href="https://github.com/YonierGM" target="_blank"> 
                                         <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"
-                                          alt="Spring"/> 
+                                            alt="Spring"/> 
                                     </a>
                                     <a href="https://github.com/YonierGM" target="_blank"> 
                                         <img src="https://img.shields.io/badge/spring%20boot-6DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white" alt="spring Boot" /> 
@@ -175,7 +173,7 @@
                             
                                     <a href="https://github.com/YonierGM" target="_blank"> 
                                         <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-                                          alt="HTML"/> 
+                                            alt="HTML"/> 
                                     </a>
                                     <a href="https://github.com/YonierGM" target="_blank"> 
                                         <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"/> 
@@ -268,11 +266,12 @@
                         </div>
                     }
                 </div>
-        </section>
-
-        <div class="contact">
-            <app-contact/>
+            </section>
+    
+            <div class="contact">
+                <app-contact/>
+            </div>
         </div>
-    </div>
+    </section>
 </section>
- -->
+
