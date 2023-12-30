@@ -1,13 +1,13 @@
-@font-face {
-    font-family: mont-bold;
-    src: url('./../../../assets/Fonts/Mont-Bold.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&family=Work+Sans:wght@200;300&display=swap');
+
+h1{
+    font-family: 'Outfit', sans-serif;
+
 }
 
-@font-face {
-    font-family: mont-regular;
-    src: url('./../../../assets/Fonts/Mont-Regular.ttf');
+p{
+    font-family: 'Work Sans', sans-serif;
 }
-
 
 .main-content{
     width: 100%;
@@ -17,7 +17,8 @@
     "navbar"
     "home";
 
-    gap: 70px;
+    gap: 110px;
+    background: #F0F2F5;
 }
 
 .tittle-seccion{
@@ -40,7 +41,6 @@
     gap: 20px;
     background: #F0F2F5;
 
-    padding: 20px;
 }
 
 .main{
@@ -48,33 +48,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
-    margin: auto;
 }
 
 .presentacion{
     width: 90%;
-
-    display: grid;
-    grid-template-areas: 
-    "foto info";
-
+    display: flex;
     justify-content: center;
+    align-items: center;
 
     gap: 40px;
 }
 
 .foto{
-    width: 100%;
-    grid-area: foto;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .foto .contenido{
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 350px;
+    max-height: 350px;
 
     border-radius: 30% 70% 70% 30% / 30% 32% 68% 70%;
     overflow: hidden;
@@ -92,7 +89,7 @@
 .contenido img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 img:hover{
@@ -100,28 +97,40 @@ img:hover{
 }
 
 .info{
-    grid-area: info;
-    display: grid;
-    place-content: center;
-    width: auto;
     width: 100%;
-    max-width: 600px;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1200px;
+    gap: 40px;
 }
 
 .info h1{
-    text-align: center;
-    font-family: mont-bold;
-    font-size: 3.5rem;
-
+    font-size: 3rem;
     text-wrap: wrap;
 }
 
-.info p{
-    text-align: justify;
-    font-family: mont-regular;
+.info .nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info .descripcion{
+    width: 80%;
     text-wrap: wrap;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+
+    border-radius: 30px;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 20px;
+}
+
+.info .profesion{
+    font-size: 1.8rem;
 }
 
 .acciones{
@@ -134,6 +143,8 @@ img:hover{
 .acciones a{
     width: 130px;
     height: 30px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .acciones a img{
@@ -176,7 +187,8 @@ img:hover{
 }
 
 .estudios{
-    width: 100%;
+    width: 90%;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,12 +199,7 @@ img:hover{
 }
 
 .carrera h1{
-    font-family: mont-bold;
     font-size: 1.3rem;
-}
-
-p{
-    font-family: mont-regular;
 }
 
 .toggle{
@@ -205,7 +212,7 @@ p{
     cursor: pointer;
 
     transition: .3s all;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .fa-solid{
@@ -281,6 +288,7 @@ p{
 }
 
 .proyectos{
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -298,6 +306,7 @@ p{
 .cards .card{
     width: 100%;
     overflow: hidden;
+    border-radius: 10px;
 
     position: relative;
 }
@@ -314,10 +323,10 @@ p{
 }
 
 .contact{
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 100%;
     margin: auto;
     border-radius: 30px;
     overflow: hidden;
@@ -335,19 +344,60 @@ p{
     height: auto !important;
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 374px){
     .info h1{
-        text-align: center;
-        font-size: 2.5rem;
+        font-size: 1.5em !important;
     }
 
-    .info p{
+    .info .profesion{
+        font-size: 1rem !important;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .foto .contenido{ 
+        width: 120px;
+        height: 120px;
+    
+        border-radius: 50%;
+        overflow: hidden;
+        transition: .4s all;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .info{
+        gap: 10px;
+    }
+
+    .info h1{
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .info .descripcion{
+        width: 90%;
         font-size: 1.2rem;
     }
 
-    .main{
-        
+    .info .profesion{
+        font-size: 1.2rem;
+    }
+
+    .foto .contenido{ 
+        max-width: 210px;
+        max-height: 210px;
+    
+        border-radius: 50%;
+        overflow: hidden;
+        transition: .4s all;
+    }
+
+    .main-content{
+        gap: 80px;
     }
 
     .proyectos .cards{
@@ -357,7 +407,6 @@ p{
     
         gap: 10px;
     }
-
 }
 
 @media screen and (max-width: 1024px){
@@ -375,25 +424,20 @@ p{
     }
 
     .info{
-        grid-area: info;
-        display: grid;
-        place-content: center;
-        width: auto;
         width: 100%;
         max-width: 100%;
     }
 
+    .carrera h1{
+        font-size: 1.1rem;
+    }
+
     .foto .contenido{ 
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 210px;
+        max-height: 210px;
     
         border-radius: 50%;
         overflow: hidden;
         transition: .4s all;
-    }
-
-    .carrera h1{
-        font-family: mont-bold;
-        font-size: 1.1rem;
     }
 }

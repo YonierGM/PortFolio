@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +12,7 @@ export class NavbarComponent {
 
   visible = false;
   verLista = false;
+  scroll = false;
 
   menu(){
     this.visible = !this.visible;
@@ -21,4 +22,12 @@ export class NavbarComponent {
     this.verLista = !this.verLista;
   }
 
+  @HostListener("document:scroll")
+  Scroll(){
+    if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
+      this.scroll = true;
+    }else{
+      this.scroll = false;
+    }
+  }
 }
