@@ -119,7 +119,7 @@ img:hover{
 }
 
 .info .descripcion{
-    width: 80%;
+    width: 70%;
     text-wrap: wrap;
     font-size: 1.4rem;
 
@@ -352,7 +352,6 @@ img:hover{
     .info .profesion{
         font-size: 1rem !important;
     }
-
 }
 
 @media screen and (max-width: 600px){
@@ -397,7 +396,7 @@ img:hover{
     }
 
     .main-content{
-        gap: 80px;
+        gap: 90px;
     }
 
     .proyectos .cards{

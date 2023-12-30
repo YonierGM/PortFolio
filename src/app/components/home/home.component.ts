@@ -11,6 +11,7 @@ import { ContactComponent } from '../contact/contact.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
   altura1 = false;
   altura2 = false;
   altura3 = false;
@@ -63,6 +64,5 @@ export class HomeComponent {
   quitarInfo3(){
     this.ver3 = this.ver3 = false;
   }
-
 
 }
