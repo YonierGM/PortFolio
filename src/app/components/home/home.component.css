@@ -406,6 +406,10 @@ img:hover{
     
         gap: 10px;
     }
+
+    .estudios{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1024px){

@@ -1,6 +1,6 @@
 <section class="contenido">
     <div class="login">
-        <form action="" class="formulario">
+        <form action="" class="formulario" [formGroup]="datos">
             <div class="logo">
                 <h1>¡Saludame!</h1>
             </div>
@@ -8,16 +8,16 @@
                 <div class="input">
                     <div class="color"></div>
                     <div class="password">
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" formControlName="email" name="email">
                     </div>
                 </div>
                 <div class="input">
                     <div class="color"></div>
-                    <textarea name="textarea" rows="10" cols="50" placeholder="Tu mensaje aquí"></textarea>
+                    <textarea name="textarea" rows="10" cols="50" placeholder="Tu mensaje aquí" formControlName="mensaje" name="mensaje"></textarea>
                 </div>
             </div>
             
-            <button type="button" (click)="contact()">Enviar</button>
+            <button type="button" (click)="sendEmail()">Enviar</button>
         </form>
         <div class="aside">
 

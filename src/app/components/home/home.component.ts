@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { ContactComponent } from '../contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, ContactComponent, CommonModule],
+  imports: [NavbarComponent, ContactComponent, CommonModule, HttpClientModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
