@@ -1,0 +1,192 @@
+.main-content{
+
+    background: #F0F2F5;
+}
+
+.presentacion{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.foto{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto .contenido{
+    max-width: 350px;
+    max-height: 350px;
+
+    border-radius: 30% 70% 70% 30% / 30% 32% 68% 70%;
+    overflow: hidden;
+
+    background-position: center;
+    transition: .4s all;
+}
+
+.contenido:hover{
+    -webkit-box-shadow: -1px 17px 40px -15px rgba(0,0,0,0.45);
+    -moz-box-shadow: -1px 17px 40px -15px rgba(0,0,0,0.45);
+    box-shadow: -1px 17px 40px -15px rgba(0,0,0,0.45);
+}
+
+.contenido img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img:hover{
+    filter: saturate(110%);
+}
+
+.info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.info h1{
+    font-size: 3rem;
+    text-wrap: wrap;
+}
+
+.info .nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info .descripcion{
+    width: 70%;
+    text-wrap: wrap;
+    font-size: 1.4rem;
+
+    border-radius: 30px;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 20px;
+}
+
+.info .profesion{
+    font-size: 1.8rem;
+}
+
+.acciones{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.acciones a{
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.acciones a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.acciones a:hover{
+    opacity: .8;
+}
+
+@media screen and (max-width: 374px){
+    .info h1{
+        font-size: 1.5em !important;
+    }
+
+    .info .profesion{
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .foto .contenido{ 
+        width: 120px;
+        height: 120px;
+    
+        border-radius: 50%;
+        overflow: hidden;
+        transition: .4s all;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .info{
+        gap: 10px;
+    }
+
+    .info h1{
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .info .descripcion{
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .info .profesion{
+        font-size: 1.2rem;
+    }
+
+    .foto .contenido{ 
+        max-width: 210px;
+        max-height: 210px;
+    
+        border-radius: 50%;
+        overflow: hidden;
+        transition: .4s all;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .presentacion{
+        width: 100%;
+        grid-template-areas: 
+        "foto"
+        "info";
+
+        gap: 20px;
+    }
+
+    .info{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .carrera h1{
+        font-size: 1.1rem;
+    }
+
+    .foto .contenido{ 
+        max-width: 210px;
+        max-height: 210px;
+    
+        border-radius: 50%;
+        overflow: hidden;
+        transition: .4s all;
+    }
+}

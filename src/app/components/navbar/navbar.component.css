@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&family=Work+Sans:wght@200;300&display=swap');
 
+h1{
+    font-family: 'Outfit', sans-serif;
+
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+}
+
 .scroll{
     background: #ffffff;
 }
@@ -20,7 +29,7 @@ h1{
     font-family: 'Outfit', sans-serif;
 }
 
-p{
+p, a{
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -230,11 +239,14 @@ header{
         padding: 8px;
 
         list-style: none;
-        transition: .4s all ease;
+        transition: .3s all ease;
+
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
 
     li:hover{
-        background: #9CC6DC;   
+        background: #9CC6DC;
     }
 
     li:hover a{
