@@ -1,11 +1,6 @@
-.main-content{
-
-    background: #F0F2F5;
-}
 
 .presentacion{
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,10 +45,9 @@ img:hover{
 
 .info{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     max-width: 1200px;
@@ -110,9 +104,9 @@ img:hover{
     opacity: .8;
 }
 
-@media screen and (max-width: 374px){
+@media screen and (max-width: 470px){
     .info h1{
-        font-size: 1.5em !important;
+        font-size: 1.3em !important;
     }
 
     .info .profesion{
