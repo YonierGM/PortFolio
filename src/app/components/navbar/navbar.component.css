@@ -4,6 +4,10 @@
     background: #ffffff;
 }
 
+.ocultar{
+    display: none;
+}
+
 .abrir-menu{
     visibility: hidden;
 }
