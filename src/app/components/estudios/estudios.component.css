@@ -107,4 +107,14 @@
     .estudios{
         width: 100%;
     }
+
+    .carrera h1{
+        font-size: 1.2rem;
+
+    }
+
+    .fecha p{
+        font-size: .9rem;
+
+    }
 }
