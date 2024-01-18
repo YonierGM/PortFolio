@@ -21,8 +21,6 @@ export class PortfolioComponent {
     this.ver1 = this.ver1 = false;
   }
 
-
-
   mostrarInfo2(){
     this.ver2 = this.ver2 = true;
   }
@@ -30,8 +28,6 @@ export class PortfolioComponent {
   quitarInfo2(){
     this.ver2 = this.ver2 = false;
   }
-
-
 
   mostrarInfo3(){
     this.ver3 = this.ver3 = true;
