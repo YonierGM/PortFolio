@@ -10,11 +10,12 @@
 }
 
 .proyectos .cards{
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     gap: 10px;
+    padding-bottom: 20px;
 }
 
 .proyecto{

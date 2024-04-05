@@ -14,6 +14,7 @@ export class EstudiosComponent {
   altura3 = false;
   altura4 = false;
   altura5 = false;
+  altura6 = false;
 
   cambiarAltura1(){
     this.altura1 = !this.altura1;
@@ -29,6 +30,9 @@ export class EstudiosComponent {
   }
   cambiarAltura5(){
     this.altura5 = !this.altura5;
+  }
+  cambiarAltura6(){
+    this.altura6 = !this.altura6;
   }
 
 
