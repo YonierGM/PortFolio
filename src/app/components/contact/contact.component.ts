@@ -31,6 +31,11 @@ export class ContactComponent {
     }
 
     sendEmail(): void {
+      if (this.datos.invalid) {
+        Notiflix.Notify.failure('Por favor, ingresa un correo válido y un mensaje.');
+        return;
+      }
+    
       Notiflix.Loading.circle('Enviando...');
     
       // Extraer solo los valores del formulario
@@ -38,14 +43,12 @@ export class ContactComponent {
     
       this.emailService.sendEmail(emailData).subscribe({
         next(value) { 
-          console.log('Email enviado:', value);
           Notiflix.Loading.remove();
           Notiflix.Notify.success('Tu Mensaje fue enviado');
         },
         error(err) {
           Notiflix.Loading.remove();
           Notiflix.Notify.failure('Error al enviar: ' + err);
-          console.log('Error al enviar:', err);
         },
         complete() {
           console.log('Observable completed');
