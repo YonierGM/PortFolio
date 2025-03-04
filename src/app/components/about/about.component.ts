@@ -5,7 +5,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [EstudiosComponent, NavbarComponent],
+  imports: [],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

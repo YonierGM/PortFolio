@@ -8,18 +8,13 @@ import { Observable } from 'rxjs';
 
 export class EmailService {
 
-  private apiUrl = 'http://localhost:3000/emails';
-  private authorizationToken = 'Bearer re_S6gmwkst_91dzT8KnPnQpncoNorEtwifz';
+  private apiUrl = 'http://localhost:3000/send';
 
   constructor(private http: HttpClient) {}
 
   sendEmail(emailData: any): Observable<any> {
-    const headers = new HttpHeaders({
-      'Authorization': this.authorizationToken,
-      'Content-Type': 'application/json',
-    });
 
-    return this.http.post(this.apiUrl, emailData, { headers });
+    return this.http.post(this.apiUrl, emailData);
   }
 
 }
