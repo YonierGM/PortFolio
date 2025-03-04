@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 
 export class EmailService {
 
-  private apiUrl = 'http://localhost:3000/send';
+  private apiUrl = 'https://resend-email.onrender.com/send';
 
   constructor(private http: HttpClient) {}
 
